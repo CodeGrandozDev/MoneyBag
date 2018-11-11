@@ -1,0 +1,7 @@
+name: MoneyBagPlugin
+main: fr.CodeGrandoz.MoneyBag.MoneyBag
+version: 0.0.1
+api-version: 1.12.2
+description: Plugin de gestion d'argent et shop in-game
+author: [CodeMajorGeek, Grandoz]
+commands:
