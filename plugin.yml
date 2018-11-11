@@ -6,5 +6,5 @@ description: Plugin de gestion d'argent et shop in-game
 author: [CodeMajorGeek, Grandoz]
 commands:
   money:
-    description: donne l'argent du joueur en temps réelle.
+    description: donne l'argent du joueur.
     permission: MoneyBag.money
