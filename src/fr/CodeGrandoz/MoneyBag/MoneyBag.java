@@ -1,5 +1,9 @@
 package fr.CodeGrandoz.MoneyBag;
 
+import static fr.CodeGrandoz.utils.References.*;
+
+import java.io.*;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 import fr.CodeGrandoz.MoneyBag.commands.CommandMoney;
@@ -20,6 +24,17 @@ public class MoneyBag extends JavaPlugin{
 	}
 	
 	private void preInit() {
+		
+		File moneyFile = new File(JSON_MONEY_FILE);
+		
+		try {
+			
+			if(!moneyFile.exists())
+				moneyFile.createNewFile();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
 		
 		System.out.println("Le plugin MoneyBag s'initialise !");
 	}
